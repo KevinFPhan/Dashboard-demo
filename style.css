@@ -223,7 +223,7 @@
 .home-section .home-content{
   height: 60px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
@@ -232,6 +232,7 @@
 }
 .home-section .home-content .bx-menu{
   margin: 0 15px;
+  
   cursor: pointer;
 }
 .home-section .home-content .text{
@@ -242,4 +243,25 @@
   .sidebar.close .nav-links li .sub-menu{
     display: none;
   }
+}
+
+
+.userprofile1 {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.userprofile {
+    margin-right: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.userprofile i {
+    margin-right: 15px;
 }
