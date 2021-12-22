@@ -61,6 +61,7 @@
   list-style: none;
   transition: all 0.4s ease;
 }
+
 .sidebar .nav-links li:hover{
   background: #1d1b31;
 }
@@ -70,7 +71,7 @@
   justify-content: space-between;
 }
 .sidebar.close .nav-links li .iocn-link{
-  display: block
+  display: block;
 }
 .sidebar .nav-links li i{
   height: 50px;
@@ -99,9 +100,25 @@
   color: #fff;
   transition: all 0.4s ease;
 }
+.sidebar .nav-links .nav-list-divider h3 {
+    color: rgb(80, 80, 80);
+    transition: all 0.4s ease;
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 31px;
+}
 .sidebar.close .nav-links li a .link_name{
   opacity: 0;
   pointer-events: none;
+}
+.sidebar.close .nav-links .nav-list-divider h3,
+.sidebar.close .nav-list-divider:not(.divider-a) {
+    opacity: 0;
+    
+}
+.nav-list-divider:not(.divider-a) {
+    border-top: 1px solid #fff;
+    
 }
 .sidebar .nav-links li .sub-menu{
   padding: 6px 6px 14px 80px;
@@ -113,7 +130,7 @@
   display: block;
 }
 .sidebar .nav-links li .sub-menu a{
-  color: #fff;
+  color: #fff   ;
   font-size: 15px;
   padding: 5px 0;
   white-space: nowrap;
@@ -121,7 +138,9 @@
   transition: all 0.3s ease;
 }
 .sidebar .nav-links li .sub-menu a:hover{
-  opacity: 1;
+  /* display: none; */
+  opacity: 0;
+  
 }
 .sidebar.close .nav-links li .sub-menu{
   position: absolute;
@@ -246,6 +265,7 @@
 }
 
 
+
 .userprofile1 {
     width: auto;
     display: flex;
@@ -265,3 +285,4 @@
 .userprofile i {
     margin-right: 15px;
 }
+
